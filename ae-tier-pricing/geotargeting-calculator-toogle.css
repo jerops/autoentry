@@ -1,0 +1,26 @@
+
+/* When active class is applied, change flow-color behavior */
+.active [flow-color="on_dark"] {
+    /* Apply on_bright styles instead */
+    color: var(--btn-pur-outline-text-hover-on-dark) !important;
+    background-color: var(--new-purchase-flow) !important;
+}
+
+.active [flow-color="on_dark"]:hover {
+    background-color: var(--btn-pur-bg-hover-white) !important;
+}
+
+/* If you also want the reverse (on_bright becomes on_dark when active) */
+.active [flow-color="on_bright"] {
+    /* Apply on_dark styles instead */
+    color: var(--primary-black) !important;
+    background-color: var(--btn-pur-on-dark) !important;
+}
+
+.active [flow-color="on_bright"]:hover {
+    background-color: var(--btn-pur-under-hover-on-dark) !important;
+}
+
+
+
+
